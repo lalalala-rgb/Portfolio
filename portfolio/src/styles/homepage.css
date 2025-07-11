@@ -1,0 +1,115 @@
+.intro-section {
+  display: relative;
+  height: 100vh;
+  background-color: darkgrey;
+}
+
+.project-section {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.aboutme-section {
+  display: flex;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 5vh 0 0 10vh;
+}
+
+img {
+  display: absolute;
+  height: 60vh;
+  width: 55vh;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 10vh;
+  background: transparent;
+  float: right;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #555;
+  padding: 5vh 0 0 10vh;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  padding: 2vh 0 0 10vh;
+}
+
+.projects-button {
+  position: absolute;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 10vh;
+}
+
+.projects-button:hover {
+  background-color: #0056b3;
+  transition: ease-in-out 0.3s;
+}
+
+.my-info {
+  height: 100vh;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  color: #666;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.social-links .linkedIn:hover,
+.social-links .facebook:hover,
+.social-links .gitHub:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.social-links {
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+}
+
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+  background-color: thistle;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.project-cards {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+
