@@ -1,23 +1,24 @@
-.intro-section {
-  display: relative;
-  height: 100vh;
-  background-color: darkgrey;
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  min-height: 100vh;
+  margin: 0;
 }
 
-.project-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-}
-
+.intro-section,
+.project-section,
 .aboutme-section {
-  display: flex;
-  height: 100vh;
-  background-color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  padding: 32px 0;
+  width: 90%;
+  max-width: 1200px;
 }
+
+/* start of intro section */
 
 h1 {
   font-size: 2.5rem;
@@ -26,7 +27,6 @@ h1 {
 }
 
 img {
-  display: absolute;
   height: 60vh;
   width: 55vh;
   border-radius: 10px;
@@ -57,7 +57,7 @@ p {
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.2rem;
-  margin-left: 10vh;
+  margin-left: 5vh;
 }
 
 .projects-button:hover {
@@ -90,6 +90,7 @@ p {
   color: white;
   cursor: pointer;
   transition: ease-in-out 0.3s;
+  display: flex;
 }
 
 .social-links {
@@ -98,17 +99,59 @@ p {
   display: flex;
   gap: 15px;
 }
+.buttonrow {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
 
+.project-container{
+  margin-bottom: 10px;
+}
+
+/* end of intro section */
+
+/* skills section */
+.skills-section {
+  margin: 40px auto;
+  padding: 32px 0;
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.skills-section h1{
+  margin-right: 100px;
+}
+.skills-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.skills-list span {
+  background: #e0c3fc;
+  color: #333;
+  border-radius: 8px;
+  padding: 6px 18px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* end of skills section */
+
+/* project section */
 .project-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  max-width: 90vw;
   margin: auto;
-  background-color: rgba(216, 191, 216, 0.8);
   height: 75vh;
   overflow: hidden;
-
 }
 
 .project-cards {
@@ -117,12 +160,12 @@ p {
   gap: 20px;
 }
 
-.project-btn{
+.project-btn {
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 50%;
-  padding:10px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,8 +179,51 @@ p {
   transition: ease-in-out 0.3s;
 }
 
-.project-title{
+.project-title {
   align-items: center;
   margin-right: 100px;
 }
 
+/* end of project section */
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+  color: #888;
+  font-size: 1rem;
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .project-wrapper {
+    flex-direction: column;
+    max-width: 98vw;
+  }
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-section {
+    padding-bottom: 180px;
+  }
+
+  .intro-section h1 {
+    margin-left: 35px;
+  }
+
+  .intro-section img {
+    margin: 0 32px;
+  }
+  .my-info h2 {
+    margin: 0 60px 0 0;
+  }
+
+  .my-info p {
+    margin: 0 54px 0 0;
+  }
+
+  .project-container {
+    margin: 25px 250px 0 0;
+  }
+}

@@ -1,4 +1,3 @@
-
 import "../styles/projectcard.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -11,6 +10,11 @@ const Projectcard = ({ project }) => {
       <div className="project-info">
         <h2>{project.title}</h2>
         <p>{project.description}</p>
+        {project.tech && (
+          <div className="project-tags">
+            {project.tech.map(tag => <span className="tag" key={tag}>{tag}</span>)}
+          </div>
+        )}
         <div className="project-links">
           {project.github && (
             <a href={project.github} target="_blank" rel="noopener noreferrer" title="GitHub Repository">
