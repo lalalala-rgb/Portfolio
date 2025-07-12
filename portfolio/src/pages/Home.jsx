@@ -1,15 +1,17 @@
 import "../styles/Homepage.css";
 import myimage from "../image/my-pic.png";
+import bank from "../image/bank.png";
+import logo from "../image/logo.png";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import React from "react";
 import Projectcard from "../component/Projectcard";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 const Home = () => {
   const projects = [
     {
       id: 1,
-      image: myimage,
+      image: bank,
       title: "C# Bank System",
       description: "Bank system built with C# and Windows Forms.",
       github: "https://example.com/project1",
@@ -18,8 +20,8 @@ const Home = () => {
       id: 2,
       title: "Noli Me Tangere",
       description: "A 2D game based on the novel by Jose Rizal.",
-      image: myimage,
-      github: "https://example.com/project1",
+      image: logo,
+      github: "https://github.com/lalalala-rgb/Ibarra-sTale",
     },
      {
       id: 3,
@@ -89,13 +91,15 @@ const Home = () => {
       </section>
 
       <section className="project-section">
-        <h1>Projects</h1>
+        <h1 className="project-title">Projects</h1>
         <div className="project-wrapper">
+          <button className="project-btn"><FaChevronLeft /></button>
         <div className="project-cards">
            {projects.slice(0, 4).map((project) => (
               <Projectcard key={project.id} project={project} />
             ))}
         </div>
+        <button className="project-btn"><FaChevronRight /></button>
         </div>
       </section>
 
