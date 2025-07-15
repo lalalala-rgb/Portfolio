@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", Arial, sans-serif;
-  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: black;
   min-height: 100vh;
   margin: 0;
 }
@@ -8,26 +8,26 @@ body {
 .intro-section,
 .project-section,
 .aboutme-section {
-  background: rgba(255, 255, 255, 0.25);
+ background: linear-gradient(135deg, indigo 20%, midnightblue 100%);
   backdrop-filter: blur(8px);
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   margin: 40px auto;
   padding: 32px 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 /* start of intro section */
 
 h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: white;
   padding: 5vh 0 0 10vh;
 }
 
 img {
-  height: 60vh;
+  height: auto;
   width: 55vh;
   border-radius: 10px;
   object-fit: cover;
@@ -37,15 +37,15 @@ img {
 }
 
 h2 {
-  font-size: 2rem;
-  color: #555;
+  font-size: 1.8rem;
+  color: white;
   padding: 5vh 0 0 10vh;
 }
 
 p {
   font-size: 1.2rem;
-  color: #666;
   padding: 2vh 0 0 10vh;
+  color: white;
 }
 
 .projects-button {
@@ -66,7 +66,7 @@ p {
 }
 
 .my-info {
-  height: 100vh;
+  height: 60vh;
   text-align: center;
   margin-top: 70px;
 }
@@ -117,10 +117,16 @@ p {
   padding: 32px 0;
   width: 90%;
   max-width: 1200px;
-  background: rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, indigo 0%, midnightblue 100%);
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.skills-list span{
+  display: flex;
+  padding: 8px 12px;
+  gap: 4px;
 }
 
 .skills-section h1{
@@ -185,6 +191,13 @@ p {
 }
 
 /* end of project section */
+
+/* about me section*/
+.aboutme-section h1{
+  font-size: 2.5rem;
+  color: white;
+   transform: translateY(-30px)
+}
 
 footer {
   text-align: center;
