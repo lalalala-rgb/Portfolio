@@ -1,7 +1,6 @@
 import "../styles/Homepage.css";
 import Intro from "../component/Intro";
 import Project from "../component/Project";
-
 import About from "../component/About";
 
 const Home = () => {
