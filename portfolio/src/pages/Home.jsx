@@ -1,5 +1,4 @@
 import "../styles/Homepage.css";
-import Projectcard from "../component/Projectcard";
 import Intro from "../component/Intro";
 import Project from "../component/Project";
 import Skills from "../component/Skills";

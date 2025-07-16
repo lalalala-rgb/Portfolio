@@ -2,29 +2,26 @@ import "../styles/about.css";
 
 const about = () => {
   return (
-  <section className="aboutme-section" id="about">
-        <h1>About Me</h1>
-        <div className="aboutme-content">
-          <div>
-            <p>
-              Hi! I’m a passionate developer who loves building meaningful web
-              applications and exploring the latest tech trends. Whether it's
-              crafting sleek front-ends or solving back-end challenges, I'm all
-              in.
-            </p>
-            <p>
-              I specialize in JavaScript, React, and Node.js. Lately, I’ve been
-              experimenting with AI integrations and Web3. I believe in writing
-              clean, efficient code and staying curious.
-            </p>
-            <p>
-              When I’m not coding, you’ll find me sketching UI ideas, learning a
-              new framework, or hiking to clear my mind.
-            </p>
-          </div>
+    <section className="aboutme-section" id="about">
+      <h1>About Me</h1>
+      <div className="aboutme-content">
+        <div className="grid1">
+          <h2>
+            Hi! <br />
+            I'm Louise David Lirio
+          </h2>
+          <p>
+            Passionate Web developer crafting <br />
+            sleek, responsive websites <br />
+            that bring ideas to life through clean code and creative design.
+          </p>
         </div>
-      </section>
-  )
-}
+        <div className="grid2"> afdas</div>
+        <div className="grid3">adfa</div>
+        <div className="grid4">asdfasd</div>
+      </div>
+    </section>
+  );
+};
 
-export default about
+export default about;

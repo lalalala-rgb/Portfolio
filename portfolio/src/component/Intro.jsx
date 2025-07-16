@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/intro.css";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import bank from "../image/bank.png";
@@ -19,36 +18,32 @@ const intro = () => {
           Feel free to check out my projects from my college journey and learn
           more about me.
         </p>
-        <div className="buttonrow">
-          <div className="social-links">
-            <a
-              href="https://facebook.com/yourprofile"
-              className="facebook"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://github.com/lalalala-rgb"
-              className="gitHub"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/louise-lirio-49165a277/"
-              className="linkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
-          <div className="project-container">
-            <button className="projects-button">Projects</button>
-          </div>
+
+        <div className="social-links">
+          <a
+            href="https://facebook.com/yourprofile"
+            className="facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://github.com/lalalala-rgb"
+            className="gitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/louise-lirio-49165a277/"
+            className="linkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
         </div>
       </div>
     </section>

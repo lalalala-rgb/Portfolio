@@ -88,12 +88,4 @@ p {
   display: flex;
   gap: 15px;
 }
-.buttonrow {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-}
 
-.project-container{
-  margin-bottom: 10px;
-}
