@@ -1,7 +1,7 @@
 .project-card {
-   background-color: rgba(0, 0, 0, 0.78);
+  background-color: rgba(0, 0, 0, 0.78);
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -12,12 +12,12 @@
 
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .project-poster {
   display: flex;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   height: 180px;
   width: 100%;
@@ -26,7 +26,7 @@
 
 .project-poster img {
   height: 100%;
-  margin:auto;
+  margin: auto;
   width: auto;
   border-radius: 12px;
 }
@@ -59,6 +59,21 @@
 .project-links {
   display: flex;
   justify-content: center;
+  gap: 8px;
+}
+
+.demo-button {
+  background: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.demo-button:hover {
+  background: #ff6347;
 }
 
 .github-button {
@@ -66,10 +81,9 @@
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 8px 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s;
 }
 
 .github-button:hover {

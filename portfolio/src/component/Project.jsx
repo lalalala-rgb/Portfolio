@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Projectcard from "../component/Projectcard";
 import { useState } from "react";
 
-const project = () => {
+const Project = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const projects = [
     {
@@ -23,6 +23,7 @@ const project = () => {
       image: logo,
       github: "https://github.com/lalalala-rgb/Ibarra-sTale",
       tech: ["Unity", "React", "CSS"],
+      demo: "https://ibarrastale-2af5b.web.app",
     },
     {
       id: 3,
@@ -78,6 +79,7 @@ const project = () => {
           className="project-btn"
           onClick={() => setCurrentIndex(currentIndex - 4)}
           disabled={currentIndex === 0}
+          style={{ visibility: projects.length === 0 ? "hidden" : "visible" }}
         >
           <FaChevronLeft />
         </button>
@@ -92,6 +94,7 @@ const project = () => {
           className="project-btn"
           onClick={() => setCurrentIndex(currentIndex + 4)}
           disabled={currentIndex === projects.length - 4}
+          style={{ visibility: projects.length === 0 ? "hidden" : "visible" }}
         >
           <FaChevronRight />
         </button>
@@ -100,4 +103,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
