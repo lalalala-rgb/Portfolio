@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaCopy } from "react-icons/fa";
 import { TbCopyCheckFilled } from "react-icons/tb";
 import "../styles/CopyEmailButton.css";
