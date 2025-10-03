@@ -7,6 +7,6 @@
   ],
   "buildCommand": "npm run build",
   "outputDirectory": "frontend/dist",
-  "installCommand": "cd portfolio&& npm install",
+  "installCommand": "cd portfolio && npm install",
   "framework": "vite"
 }
