@@ -5,8 +5,8 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "cd Portfolio && npm run build",
+  "buildCommand": "cd Portfolio; npm run build",
   "outputDirectory": "Portfolio/dist",
-  "installCommand": "cd Portfolio && npm install",
+  "installCommand": "cd Portfolio; npm install",
   "framework": "vite"
 }
