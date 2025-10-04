@@ -102,16 +102,6 @@ export const portfolioConfig = {
       status: "in-progress",
     },
   ],
-
-  // Theme customization
-  theme: {
-    primaryColor: "#3B82F6",
-    secondaryColor: "#10B981",
-    accentColor: "#F59E0B",
-    backgroundColor: "#F8FAFC",
-    textColor: "#1E293B",
-    cardBackground: "#FFFFFF",
-  },
 };
 
 export default portfolioConfig;
